@@ -1,0 +1,22 @@
+.move-care {
+  animation-name: move-car;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes move-car {
+  0% {
+    left: 8%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+.wrapper-hiden {
+  transform: translateX(-200%);
+}
+.wrapper-active {
+  transform: translateX(0);
+}

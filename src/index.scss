@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+}
+body {
+    margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+  
+.page {
+  color: #fff;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+  
+.header {
+  background: #000000;
+}
+.navigation {
+  display: flex;
+}
+.main {
+  height: 100%;
+  background-image: url(./assets/fone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  
+.footer {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2%;
+  font-size: 1.3rem;
+}
+.copy-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem
+}
+.link-github{
+  display: block;
+}
+.a-button {
+  display: block;
+  margin: 1rem  2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 10px 0 0 10px;
+  background-color: inherit;
+  text-shadow: 1px 1px 1px #000;
+  transition: all 0.3s ease-in;
+  &:hover {
+    border: 1px solid #f00;
+    text-shadow: none;
+  }
+  &:active {
+    color: #f00;
+  }
+}
+
+@import './styles/wrapper-center.scss';
+@import './styles/cars.scss';
